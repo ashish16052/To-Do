@@ -1,5 +1,6 @@
 # To-Do
-Simple To do app, to store your tasks. Made using EJS and Node
+Simple To do app, to store your tasks. Made using EJS and Node.
+
 Node module used: Express
 
 Open command line
