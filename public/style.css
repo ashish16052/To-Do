@@ -1,0 +1,77 @@
+*{
+  margin:  0;
+  padding: 0;
+}
+
+body{
+  background: rgb(163,167,245);
+  background: linear-gradient(90deg, rgba(163,167,245,1) 1%, rgba(210,186,251,1) 50%, rgba(123,250,255,1) 100%);
+  background: linear-gradient(144deg, rgba(163, 167, 245, 1) 1%, rgba(210, 186, 251, 1) 50%, rgba(123, 250, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-self:flex-start;
+  border: solid black;
+  padding: 1vh 1vh;
+  min-height: 50vh;
+  border-radius: 8px;
+}
+
+.day{
+  font-size: 28px;
+  padding: 1vh 1vw;
+}
+
+.checkbox{
+  margin: 0 1vw;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked+label{
+  text-decoration: line-through;
+  color: rgb(182, 182, 182)
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+.task{
+  background-color: white;
+  border-radius: 12px;
+  margin: 1vh 1vw;
+  width: 14rem;
+  padding: 0.5vh 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.form{
+  height: 30px;
+  margin: 1vh 1vw;
+  width: 15rem;
+  border-radius: 12px;
+}
+
+.input{
+  border: none;
+  height: 30px;
+  width: 13vw;
+  border-radius: 12px;
+  padding: 0 1vw;
+}
+
+.btn{
+  border: none;
+  border-radius: 50%;
+  width: 5vh;
+  height: 5vh;
+}
