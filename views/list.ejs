@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <title>To do</title>
+</head>
+<body>
+    <div class="box">
+        <h1 class="day"><%= day %></h1>
+        <% for(var i=0; i < task.length; i++){ %>
+            <div class="task"><input type="checkbox" class="checkbox"><label><%= task[i] %></label></div>
+        <% } %>
+        <form name="toDo" action="/" method="post" class="form">
+            <input type="text" name="task" class="input" placeholder="New Task">
+            <button type="submit" name="button" class="btn">+</button>
+        </form>
+    </div>
+</body>
+</html>
